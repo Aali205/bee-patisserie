@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bee Patisserie — A taste you'll always remember · Damascus</title>
+  <meta name="description" content="Bee Patisserie, Damascus. Luxury pastries, tarts, croissants and custom cakes crafted by hand from the finest imported ingredients. Mazzeh & Salhieh." />
+  <meta name="theme-color" content="#F19425" />
+  <meta property="og:title" content="Bee Patisserie — Damascus" />
+  <meta property="og:description" content="A taste you'll always remember. Custom cakes & pastries for every occasion." />
+  <meta property="og:image" content="/images/slice-of-love.webp" />
+  <link rel="icon" type="image/png" href="/images/bee-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=El+Messiri:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/images/logo.png" />
+</head>
+<body class="is-loading">
+
+<!-- ============ INTRO ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__hex"></div>
+  <div class="intro__stage">
+    <div class="intro__logo" id="introLogo">
+      <svg class="intro__trail" viewBox="0 0 673 351" preserveAspectRatio="none">
+        <defs>
+          <mask id="introTrailMask" maskUnits="userSpaceOnUse" x="-2000" y="-2000" width="5000" height="5000">
+            <path id="introTrailReveal" d="" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" />
+          </mask>
+        </defs>
+        <path id="introTrail" d="" fill="none" stroke="#F19425" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.5 16" mask="url(#introTrailMask)" />
+      </svg>
+      <!-- layers injected by JS -->
+    </div>
+    <p class="intro__tag" data-i18n="intro.tag">A taste you'll always remember</p>
+  </div>
+  <button class="intro__skip" type="button" data-i18n="intro.skip">Skip intro</button>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label" data-i18n="cursor.taste">Taste</span></div></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" aria-label="Bee Patisserie home"><img id="navLogo" src="/images/logo.png" alt="Bee Group Patisserie" width="673" height="351" /></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#collection" data-i18n="nav.collection">Collection</a>
+    <a href="#story" data-i18n="nav.story">Our Story</a>
+    <a href="#occasions" data-i18n="nav.occasions">Custom Cakes</a>
+    <a href="#visit" data-i18n="nav.visit">Visit</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="lang" id="langToggle" type="button" aria-label="Switch language"><span class="lang__en">EN</span><span class="lang__sep">/</span><span class="lang__ar">ع</span></button>
+    <a class="btn btn--honey nav__cta" href="tel:+963991384000"><span data-i18n="nav.order">Order now</span></a>
+    <button class="nav__burger" id="burger" type="button" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <a href="#collection" data-i18n="nav.collection">Collection</a>
+  <a href="#story" data-i18n="nav.story">Our Story</a>
+  <a href="#occasions" data-i18n="nav.occasions">Custom Cakes</a>
+  <a href="#visit" data-i18n="nav.visit">Visit</a>
+  <a class="menu__phone" href="tel:+963991384000">0991 384 000</a>
+</div>
+
+<main id="top">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero" data-waypoint="0.78">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="eyebrow__line"></span><span data-i18n="hero.eyebrow">Maison de pâtisserie · Damascus</span></p>
+      <h1 class="hero__title split" data-i18n="hero.title">A taste you'll always remember.</h1>
+      <p class="hero__script" data-i18n="hero.script">made to be unforgettable</p>
+      <p class="hero__lede" data-i18n="hero.lede">Hand-crafted pastries, tarts and couture cakes — built from rare, imported ingredients and finished like fine jewellery.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--dark magnetic" href="#collection"><span data-i18n="hero.cta1">Discover the collection</span></a>
+        <a class="btn btn--ghost magnetic" href="#occasions"><span data-i18n="hero.cta2">Order a custom cake</span></a>
+      </div>
+    </div>
+    <div class="hero__art">
+      <figure class="hero__arch" data-speed="-0.12" data-cursor="taste"><img src="/images/slice-of-love.webp" alt="Strawberry pistachio mille-feuille" /></figure>
+      <figure class="hero__orb hero__orb--a" data-speed="0.18" data-cursor="taste"><img src="/images/croissant.webp" alt="Black-seed croissant" /></figure>
+      <figure class="hero__orb hero__orb--b" data-speed="0.3" data-cursor="taste"><img src="/images/chocolate-rose-cake.webp" alt="Chocolate rose petit gâteau" /></figure>
+      <div class="hero__badge" data-speed="0.08">
+        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#circ" data-i18n="hero.badge">THE TASTE YOU WILL NOT FORGET · BEE PATISSERIE · </textPath></text></svg>
+        <img src="/images/bee-mark.png" alt="" />
+      </div>
+    </div>
+    <a class="hero__scroll" href="#story"><span data-i18n="hero.scroll">Follow the bee</span><i></i></a>
+  </section>
+
+  <!-- ============ MARQUEE + HONEY DRIP ============ -->
+  <section class="band">
+    <svg class="drip" data-drip viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="marquee" id="marquee">
+      <div class="marquee__track" data-i18n-html="marquee">
+        <span>Croissants</span><b>✦</b><span>Tarts</span><b>✦</b><span>Couture Cakes</span><b>✦</b><span>Petit Gâteaux</span><b>✦</b><span>Dessert Jars</span><b>✦</b><span>Viennoiserie</span><b>✦</b>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="story" id="story" data-waypoint="0.12">
+    <div class="story__grid">
+      <div class="story__head">
+        <p class="eyebrow"><span class="eyebrow__line"></span><span data-i18n="story.eyebrow">The Hive Philosophy</span></p>
+        <h2 class="h2 split" data-i18n="story.title">We don't cut corners. We import them.</h2>
+      </div>
+      <p class="story__big" id="storyBig" data-i18n="story.big">At Bee, every piece begins long before the oven. The butter, the couverture chocolate, the nuts and the fruit are chosen from the finest sources we can reach — then shaped by hand in Damascus, every single morning. Yes, it costs more. You'll taste exactly why.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar">
+        <span class="pillar__num">01</span>
+        <div class="hex hex--sm"><img src="/images/walnut-tart.webp" alt="" /></div>
+        <h3 data-i18n="p1.t">Rare ingredients</h3>
+        <p data-i18n="p1.d">Premium imported butter, chocolate and nuts — the product decides the price, never the other way round.</p>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">02</span>
+        <div class="hex hex--sm"><img src="/images/croissant-basket.webp" alt="" /></div>
+        <h3 data-i18n="p2.t">Baked every dawn</h3>
+        <p data-i18n="p2.d">Laminated by hand, proofed slowly, baked fresh each morning. Nothing waits on the shelf.</p>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">03</span>
+        <div class="hex hex--sm"><img src="/images/white-chocolate-dome.webp" alt="" /></div>
+        <h3 data-i18n="p3.t">Finished like jewellery</h3>
+        <p data-i18n="p3.d">Every glaze, every rose of chocolate, every leaf of gold is placed one by one.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ COLLECTION (sticky horizontal) ============ -->
+  <section class="collection" id="collection" data-waypoint="0.06">
+    <div class="collection__sticky">
+      <div class="collection__head">
+        <p class="eyebrow"><span class="eyebrow__line"></span><span data-i18n="col.eyebrow">Signature Collection</span></p>
+        <h2 class="h2 split" data-i18n="col.title">Every reason to come back.</h2>
+        <div class="collection__progress"><i id="colProgress"></i></div>
+      </div>
+      <div class="collection__track" id="colTrack"></div>
+    </div>
+  </section>
+
+  <!-- ============ NUMBERS ============ -->
+  <section class="numbers" data-waypoint="0.88">
+    <div class="num"><strong data-count="58.7" data-suffix="K" data-dec="1">0</strong><span data-i18n="n1">followers who crave us daily</span></div>
+    <div class="num"><strong data-count="1400" data-suffix="+">0</strong><span data-i18n="n2">creations shared with Damascus</span></div>
+    <div class="num"><strong data-count="2">0</strong><span data-i18n="n3">boutiques — Mazzeh & Salhieh</span></div>
+    <div class="num"><strong data-count="1">0</strong><span data-i18n="n4">taste you'll always remember</span></div>
+  </section>
+
+  <!-- ============ OCCASIONS ============ -->
+  <section class="occasions" id="occasions" data-waypoint="0.9">
+    <div class="occasions__head">
+      <p class="eyebrow"><span class="eyebrow__line"></span><span data-i18n="occ.eyebrow">Custom cakes & pastries</span></p>
+      <h2 class="h2 split" data-i18n="occ.title">For every occasion worth remembering.</h2>
+      <p class="occasions__lede" data-i18n="occ.lede">Tell us the moment — we'll design the cake. Every order is sketched, tasted and sculpted by our pastry chefs.</p>
+    </div>
+    <ul class="occ-list" id="occList">
+      <li data-img="/images/white-chocolate-dome.webp"><span class="occ-list__n">01</span><span class="occ-list__t" data-i18n="o1">Birthdays</span><span class="occ-list__s" data-i18n="o1s">one more candle, one more reason</span></li>
+      <li data-img="/images/chocolate-profiterole.webp"><span class="occ-list__n">02</span><span class="occ-list__t" data-i18n="o2">Weddings & Engagements</span><span class="occ-list__s" data-i18n="o2s">towers worth a toast</span></li>
+      <li data-img="/images/walnut-tart.webp"><span class="occ-list__n">03</span><span class="occ-list__t" data-i18n="o3">Ramadan & Eid</span><span class="occ-list__s" data-i18n="o3s">tables that gather everyone</span></li>
+      <li data-img="/images/kitkat-tart.webp"><span class="occ-list__n">04</span><span class="occ-list__t" data-i18n="o4">Christmas & New Year</span><span class="occ-list__s" data-i18n="o4s">festive, generous, golden</span></li>
+      <li data-img="/images/dessert-jars.webp"><span class="occ-list__n">05</span><span class="occ-list__t" data-i18n="o5">Gifting & Corporate</span><span class="occ-list__s" data-i18n="o5s">boxed in honey-orange</span></li>
+      <li data-img="/images/fruit-tart.webp"><span class="occ-list__n">06</span><span class="occ-list__t" data-i18n="o6">The Healthy Hive</span><span class="occ-list__s" data-i18n="o6s">lighter, still indulgent</span></li>
+    </ul>
+    <div class="occ-float" id="occFloat" aria-hidden="true"><img alt="" /></div>
+    <div class="occasions__cta">
+      <a class="btn btn--honey magnetic" href="https://wa.me/963991384000" target="_blank" rel="noopener"><span data-i18n="occ.wa">Design yours on WhatsApp</span></a>
+      <a class="btn btn--ghost magnetic" href="tel:+963991384000"><span>0991 384 000</span></a>
+    </div>
+  </section>
+
+  <!-- ============ MORNING HIVE ============ -->
+  <section class="morning" data-waypoint="0.1">
+    <div class="morning__img morning__img--big" data-cursor="taste"><img data-speed="-0.1" src="/images/croissant-basket.webp" alt="Basket of fresh croissants" /></div>
+    <div class="morning__copy">
+      <p class="eyebrow"><span class="eyebrow__line"></span><span data-i18n="m.eyebrow">The Morning Hive</span></p>
+      <h2 class="h2 split" data-i18n="m.title">Croissant o'clock, every day.</h2>
+      <p data-i18n="m.d">Black-seed croissants, stuffed brioche, golden sandwiches and warm viennoiserie — the savoury side of Bee, ready from the first light of the morning.</p>
+      <div class="morning__pair">
+        <div class="morning__img" data-cursor="taste"><img data-speed="0.08" src="/images/breakfast-tray.webp" alt="Breakfast tray" /></div>
+        <div class="morning__img" data-cursor="taste"><img data-speed="0.14" src="/images/chocolate-croissant.webp" alt="Chocolate croissant" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HONEYCOMB ============ -->
+  <section class="comb" id="comb" data-waypoint="0.5">
+    <div class="comb__head">
+      <p class="eyebrow eyebrow--center"><span data-i18n="comb.eyebrow">From the hive</span></p>
+      <h2 class="h2 split" data-i18n="comb.title">Every cell, a little masterpiece.</h2>
+    </div>
+    <div class="comb__grid" id="combGrid"></div>
+    <a class="btn btn--dark magnetic comb__ig" href="https://www.instagram.com/bee_patisserie/" target="_blank" rel="noopener"><span data-i18n="comb.ig">Follow @bee_patisserie</span></a>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit" id="visit" data-waypoint="0.85">
+    <svg class="drip drip--top" data-drip viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="visit__inner">
+      <p class="eyebrow"><span class="eyebrow__line"></span><span data-i18n="v.eyebrow">Visit the hive</span></p>
+      <h2 class="h2 split" data-i18n="v.title">Two boutiques. One unforgettable taste.</h2>
+      <div class="branches">
+        <article class="branch">
+          <span class="branch__tag" data-i18n="v.b1tag">Flagship</span>
+          <h3 data-i18n="v.b1">Mazzeh</h3>
+          <p data-i18n="v.b1a">17 Al Farabi St., Mazzeh Highway — Damascus</p>
+          <a class="branch__link" href="https://www.google.com/maps/search/?api=1&query=Bee+Patisserie+Mazzeh+Damascus" target="_blank" rel="noopener" data-i18n="v.map">Get directions →</a>
+        </article>
+        <article class="branch">
+          <span class="branch__tag" data-i18n="v.b2tag">Boutique</span>
+          <h3 data-i18n="v.b2">Salhieh</h3>
+          <p data-i18n="v.b2a">Near Al-Sham Hotel, Salhieh — Damascus</p>
+          <a class="branch__link" href="https://www.google.com/maps/search/?api=1&query=Bee+Patisserie+Salhieh+Damascus" target="_blank" rel="noopener" data-i18n="v.map">Get directions →</a>
+        </article>
+        <article class="branch branch--contact">
+          <span class="branch__tag" data-i18n="v.b3tag">Orders</span>
+          <h3><a href="tel:+963991384000" dir="ltr">0991 384 000</a></h3>
+          <p><span data-i18n="v.land">Landline</span> · <span dir="ltr">6110951 – 9232</span></p>
+          <div class="socials">
+            <a href="https://www.instagram.com/bee_patisserie/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="https://www.facebook.com/beepatisseire/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z"/></svg></a>
+            <a href="https://wa.me/963991384000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__mark" id="landing"><img src="/images/logo.png" alt="Bee Group Patisserie" /></div>
+  <p class="footer__script" data-i18n="f.script">the taste you will not forget</p>
+  <div class="footer__row">
+    <span>© <span id="year"></span> Bee Group Patisserie · Damascus, Syria</span>
+    <a href="#top" data-i18n="f.top">Back to the top ↑</a>
+  </div>
+</footer>
+
+  <!-- The signature: the Bee's flight path runs through the whole page -->
+<div class="flight" id="flight" aria-hidden="true">
+  <svg class="flight__svg" id="flightSvg">
+    <defs>
+      <mask id="flightMask" maskUnits="userSpaceOnUse">
+        <path id="flightReveal" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round" />
+      </mask>
+    </defs>
+    <path id="flightPath" class="flight__trail" fill="none" mask="url(#flightMask)" />
+  </svg>
+  <div class="flight__bee" id="flightBee">
+    <div class="flight__spin">
+      <img class="flight__body" src="/images/logo/body.png" alt="" />
+      <img class="flight__wings" src="/images/logo/wings.png" alt="" />
+      <img class="flight__antenna" src="/images/logo/antenna.png" alt="" />
+    </div>
+  </div>
+</div>
+
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

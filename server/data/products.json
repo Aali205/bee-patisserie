@@ -1,0 +1,332 @@
+[
+  {
+    "id": "563e1785-54da-48fd-a6bc-14ab5ea39385",
+    "name": {
+      "ar": "تارت الجوز الشبكي",
+      "en": "Walnut Lattice Tart"
+    },
+    "tagline": {
+      "ar": "فنّ التارت",
+      "en": "the art of"
+    },
+    "description": {
+      "ar": "عجينة زبدة شبكية، فواكه مكرملة وتاج من الجوز تحت ثلج من السكر.",
+      "en": "Buttery lattice, caramelised fruit and a crown of walnuts under a snowfall of sugar."
+    },
+    "category": "tarts",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/art-of-tart.webp",
+    "createdAt": "2026-09-29T23:19:37.146Z",
+    "updatedAt": "2026-09-29T23:19:37.146Z"
+  },
+  {
+    "id": "342fe38f-a264-4b1c-a1ed-d0599d273feb",
+    "name": {
+      "ar": "ميل فوي بالفستق",
+      "en": "Pistachio Mille-Feuille"
+    },
+    "tagline": {
+      "ar": "شريحة من الحب",
+      "en": "a slice of love"
+    },
+    "description": {
+      "ar": "مئة طبقة ذهبية، غاناش شوكولا، فستق حلبي وحبة فراولة مثالية.",
+      "en": "A hundred golden layers, piped chocolate ganache, pistachio and one perfect strawberry."
+    },
+    "category": "petit-gateaux",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/slice-of-love.webp",
+    "createdAt": "2026-09-29T23:18:37.146Z",
+    "updatedAt": "2026-09-29T23:18:37.146Z"
+  },
+  {
+    "id": "9686cfe1-b39c-47b7-b7b8-c6b5e5376433",
+    "name": {
+      "ar": "كعكة وردة الشوكولا",
+      "en": "Chocolate Rose Gâteau"
+    },
+    "tagline": {
+      "ar": "حلاوة مضاعفة",
+      "en": "sweetness amplified"
+    },
+    "description": {
+      "ar": "موس شوكولا بالحليب مغلّف بالمقرمشات، يتوّجه ورد من الشوكولا مصنوع باليد.",
+      "en": "Milk-chocolate mousse wrapped in crunch, crowned with a hand-shaped chocolate rose."
+    },
+    "category": "cakes",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/chocolate-rose-cake.webp",
+    "createdAt": "2026-09-29T23:17:37.146Z",
+    "updatedAt": "2026-09-29T23:17:37.146Z"
+  },
+  {
+    "id": "82efb7ed-c786-4be6-9e76-6d495820478b",
+    "name": {
+      "ar": "قبة الشوكولا البيضاء",
+      "en": "White Chocolate Dome"
+    },
+    "tagline": {
+      "ar": "أطيب من أن تُشارك",
+      "en": "too good to share"
+    },
+    "description": {
+      "ar": "تغليفة ناعمة من الشوكولا البيضاء، لآلئ وبتلة شوكولا منحوتة.",
+      "en": "Silky white-chocolate glaze, pearls and a sculpted chocolate petal."
+    },
+    "category": "petit-gateaux",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/white-chocolate-dome.webp",
+    "createdAt": "2026-09-29T23:16:37.146Z",
+    "updatedAt": "2026-09-29T23:16:37.146Z"
+  },
+  {
+    "id": "1d5a2091-9269-482c-9ad9-6ca9e73fb3dd",
+    "name": {
+      "ar": "تارت كيت كات",
+      "en": "KitKat Crunch Tart"
+    },
+    "tagline": {
+      "ar": "لحظات حلوة",
+      "en": "sweet moments"
+    },
+    "description": {
+      "ar": "عجينة هشة مغمورة بشوكولا الحليب وقطع الويفر المقرمش.",
+      "en": "Crisp shortcrust flooded with milk chocolate and shattered wafer."
+    },
+    "category": "tarts",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/kitkat-tart.webp",
+    "createdAt": "2026-09-29T23:15:37.146Z",
+    "updatedAt": "2026-09-29T23:15:37.146Z"
+  },
+  {
+    "id": "c21a593c-3f22-43e1-bbcd-4b93ffd71cd0",
+    "name": {
+      "ar": "تارت المارشميلو واللوتس",
+      "en": "Marshmallow & Lotus Tarts"
+    },
+    "tagline": {
+      "ar": "هذا أم ذاك؟",
+      "en": "this or that?"
+    },
+    "description": {
+      "ar": "مارشميلو فوق الغاناش أو كراميل اللوتس بخيوط الشوكولا البيضاء. لماذا تختار؟",
+      "en": "Toasted marshmallow on ganache — or Lotus caramel with white drizzle. Why choose?"
+    },
+    "category": "tarts",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/this-or-that.webp",
+    "createdAt": "2026-09-29T23:14:37.146Z",
+    "updatedAt": "2026-09-29T23:14:37.146Z"
+  },
+  {
+    "id": "ac84947d-65b3-41df-b7b1-2f7675dff67f",
+    "name": {
+      "ar": "مربعات الشوكولا المقرمشة",
+      "en": "Chocolate Crunch Bars"
+    },
+    "tagline": {
+      "ar": "طعمٌ لا يُنسى",
+      "en": "a taste to remember"
+    },
+    "description": {
+      "ar": "مقرمشات الكاكاو، شريط من الكريمة وقاعدة بسكويت بالمكسرات.",
+      "en": "Cocoa crisp, a ribbon of cream and a nutty biscuit base."
+    },
+    "category": "petit-gateaux",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/chocolate-crunch.webp",
+    "createdAt": "2026-09-29T23:13:37.146Z",
+    "updatedAt": "2026-09-29T23:13:37.146Z"
+  },
+  {
+    "id": "c2763b3f-ac98-49fb-abc0-a26c0ccc643c",
+    "name": {
+      "ar": "تارت الفواكه اللامعة",
+      "en": "Glazed Orchard Tart"
+    },
+    "tagline": {
+      "ar": "بهجة فورية",
+      "en": "instant joy"
+    },
+    "description": {
+      "ar": "شرائح تفاح وأناناس ووردة من المانجو فوق كريمة الفانيلا.",
+      "en": "Fanned apple, pineapple and a rose of mango on vanilla cream."
+    },
+    "category": "tarts",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/fruit-tart.webp",
+    "createdAt": "2026-09-29T23:12:37.146Z",
+    "updatedAt": "2026-09-29T23:12:37.146Z"
+  },
+  {
+    "id": "4a09aebe-1bd8-4141-b71f-4beff21d879f",
+    "name": {
+      "ar": "برج البروفيترول",
+      "en": "Profiterole Tower"
+    },
+    "tagline": {
+      "ar": "كل لقمة مكافأة",
+      "en": "every bite a treat"
+    },
+    "description": {
+      "ar": "كرات الشو مكدّسة ومغمورة بالشوكولا اللامعة واللآلئ المقرمشة.",
+      "en": "Choux piled high and drowned in glossy chocolate and crunchy pearls."
+    },
+    "category": "cakes",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/chocolate-profiterole.webp",
+    "createdAt": "2026-09-29T23:11:37.146Z",
+    "updatedAt": "2026-09-29T23:11:37.146Z"
+  },
+  {
+    "id": "2171db96-fe20-4c35-8513-3c164feaa573",
+    "name": {
+      "ar": "حلويات البرطمان",
+      "en": "Dessert Jars"
+    },
+    "tagline": {
+      "ar": "تعرف أنك تريدها",
+      "en": "you know you want it"
+    },
+    "description": {
+      "ar": "كوكيز وشوكولا أو ريد فيلفت وتوت، طبقات حتى الحافة.",
+      "en": "Cookie & chocolate or red velvet & berries, layered to the very top."
+    },
+    "category": "jars",
+    "price": null,
+    "available": true,
+    "featured": true,
+    "image": "/images/dessert-jars.webp",
+    "createdAt": "2026-09-29T23:10:37.146Z",
+    "updatedAt": "2026-09-29T23:10:37.146Z"
+  },
+  {
+    "id": "7a45d481-3f27-463f-8128-9cca282a4211",
+    "name": {
+      "ar": "كرواسان حبة البركة",
+      "en": "Black-Seed Croissant"
+    },
+    "tagline": {
+      "ar": "وقت الكرواسان",
+      "en": "croissant o'clock"
+    },
+    "description": {
+      "ar": "طبقات من الزبدة، قشرة مقرمشة ورشة من حبة البركة.",
+      "en": "All-butter layers, crisp shell and a sprinkle of black seed."
+    },
+    "category": "viennoiserie",
+    "price": null,
+    "available": true,
+    "featured": false,
+    "image": "/images/croissant.webp",
+    "createdAt": "2026-09-29T23:09:37.146Z",
+    "updatedAt": "2026-09-29T23:09:37.146Z"
+  },
+  {
+    "id": "55d89b37-f626-4801-92b5-c4f0028cfd96",
+    "name": {
+      "ar": "كرواسان الشوكولا والبوينو",
+      "en": "Chocolate Bueno Croissant"
+    },
+    "tagline": {
+      "ar": "يوم كرواسان",
+      "en": "a croissant kind of day"
+    },
+    "description": {
+      "ar": "كرواسان هش مغموس بالشوكولا ومحشو ومزيّن بالويفر.",
+      "en": "Flaky croissant dipped in chocolate, filled and crowned with wafer."
+    },
+    "category": "viennoiserie",
+    "price": null,
+    "available": true,
+    "featured": false,
+    "image": "/images/chocolate-croissant.webp",
+    "createdAt": "2026-09-29T23:08:37.146Z",
+    "updatedAt": "2026-09-29T23:08:37.146Z"
+  },
+  {
+    "id": "5db3516d-fca2-4eab-bbe9-c2f74295cdb8",
+    "name": {
+      "ar": "سندويشات الكرواسان المالحة",
+      "en": "Savory Croissant Sandwiches"
+    },
+    "tagline": {
+      "ar": "طازج كل صباح",
+      "en": "fresh every morning"
+    },
+    "description": {
+      "ar": "حبش وجبنة وخضار داخل كرواسان طازج بحبة البركة.",
+      "en": "Turkey, cheese and greens folded into fresh black-seed croissants."
+    },
+    "category": "savory",
+    "price": null,
+    "available": true,
+    "featured": false,
+    "image": "/images/croissant-basket.webp",
+    "createdAt": "2026-09-29T23:07:37.146Z",
+    "updatedAt": "2026-09-29T23:07:37.146Z"
+  },
+  {
+    "id": "f8a482cc-1ac3-49d2-8c3e-bbdbdf61a7e7",
+    "name": {
+      "ar": "صينية الفطور",
+      "en": "Breakfast Tray"
+    },
+    "tagline": {
+      "ar": "أطيب فطور",
+      "en": "your best breakfast"
+    },
+    "description": {
+      "ar": "خبز بالسمسم، نقانق وبريوش بالدجاج المقرمش للمشاركة.",
+      "en": "Sesame buns, sausage rolls and crispy chicken brioche for sharing."
+    },
+    "category": "savory",
+    "price": null,
+    "available": true,
+    "featured": false,
+    "image": "/images/breakfast-tray.webp",
+    "createdAt": "2026-09-29T23:06:37.146Z",
+    "updatedAt": "2026-09-29T23:06:37.146Z"
+  },
+  {
+    "id": "e5ebbf5e-94a5-440b-8ce2-273d30ba10cd",
+    "name": {
+      "ar": "تارتلت الجوز بالكراميل",
+      "en": "Caramel Walnut Tartlet"
+    },
+    "tagline": {
+      "ar": "لقمة من البهجة",
+      "en": "a bite of pure joy"
+    },
+    "description": {
+      "ar": "شبكة ذهبية فوق فواكه مكرملة، تتوجها حبة جوز كاملة.",
+      "en": "Golden lattice over caramelised fruit, finished with a whole walnut."
+    },
+    "category": "tarts",
+    "price": null,
+    "available": true,
+    "featured": false,
+    "image": "/images/walnut-tart.webp",
+    "createdAt": "2026-09-29T23:05:37.146Z",
+    "updatedAt": "2026-09-29T23:05:37.146Z"
+  }
+]
