@@ -13,6 +13,9 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = matchMedia('(pointer: fine)').matches;
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const isRTL = () => document.documentElement.dir === 'rtl';
+// site may live under a sub-path (e.g. GitHub Pages) — resolve every asset through the base
+const BASE = import.meta.env.BASE_URL;
+const asset = (p) => (/^(https?:|data:)/.test(p) ? p : BASE + p.replace(/^\//, ''));
 const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 let lang = 'en';
@@ -53,10 +56,16 @@ function applyLang(l) {
    Dynamic markup: collection (from the admin API) + honeycomb
    ========================================================= */
 async function loadProducts() {
-  try {
-    const res = await fetch('/api/products');
-    if (res.ok) products = (await res.json()).filter((p) => p.featured);
-  } catch { /* offline — the section simply stays empty */ }
+  // live API first; static snapshot as fallback for static hosting
+  for (const url of [asset('api/products'), asset('products.json')]) {
+    try {
+      const res = await fetch(url);
+      if (res.ok && res.headers.get('content-type')?.includes('json')) {
+        products = (await res.json()).filter((p) => p.featured && p.available);
+        return;
+      }
+    } catch { /* try the next source */ }
+  }
 }
 
 function renderCollection() {
@@ -65,7 +74,7 @@ function renderCollection() {
     .map((p, i) => {
       const price = p.price ? `<span class="card__price">${p.price.toLocaleString(lang === 'ar' ? 'ar-SY' : 'en-US')} ${lang === 'ar' ? 'ل.س' : 'SYP'}</span>` : '';
       return `<article class="card" data-cursor="taste">
-        <div class="card__img"><img src="${esc(p.image)}" alt="${pick(p.name)}" loading="lazy" draggable="false" /><span class="card__num">${String(i + 1).padStart(2, '0')}</span></div>
+        <div class="card__img"><img src="${esc(asset(p.image))}" alt="${pick(p.name)}" loading="lazy" draggable="false" /><span class="card__num">${String(i + 1).padStart(2, '0')}</span></div>
         <div class="card__meta"><span class="card__script">${pick(p.tagline)}</span><h3>${pick(p.name)}</h3><p>${pick(p.description)}</p>${price}</div>
       </article>`;
     })
@@ -78,9 +87,9 @@ function renderComb() {
       (row) =>
         `<div class="comb__row">${row
           .map((n) => {
-            if (n === '#honey') return `<div class="comb__cell comb__cell--honey"><img src="/images/bee-mark.png" alt="" /></div>`;
+            if (n === '#honey') return `<div class="comb__cell comb__cell--honey"><img src="${asset('images/bee-mark.png')}" alt="" /></div>`;
             if (n === '#script') return `<div class="comb__cell comb__cell--dark"><span>Bee</span></div>`;
-            return `<div class="comb__cell" data-cursor="taste"><img src="/images/${n}.webp" alt="" loading="lazy" /></div>`;
+            return `<div class="comb__cell" data-cursor="taste"><img src="${asset(`images/${n}.webp`)}" alt="" loading="lazy" /></div>`;
           })
           .join('')}</div>`,
     )
@@ -137,7 +146,7 @@ function buildIntroLogo() {
       width: `${(l.w / logo.w) * 100}%`,
       height: `${(l.h / logo.h) * 100}%`,
     });
-    d.innerHTML = `<img src="/images/logo/${l.name}.png" alt="" draggable="false" />`;
+    d.innerHTML = `<img src="${asset(`images/logo/${l.name}.png`)}" alt="" draggable="false" />`;
     parts[l.name] = d;
     (/^(stripe|wings|antenna)/.test(l.name) ? bee : box).appendChild(d);
   });
@@ -624,14 +633,14 @@ function buildPointer() {
     float.classList.remove('is-on');
   };
   $$('#occList li').forEach((li) => {
-    li.addEventListener('pointerenter', () => showFloat(li.dataset.img));
+    li.addEventListener('pointerenter', () => showFloat(asset(li.dataset.img)));
     li.addEventListener('pointerleave', hideFloat);
   });
   // scrolling moves the list under a still pointer — re-check what's under it
   addEventListener('scroll', () => {
     if (!floatOn) return;
     const li = document.elementFromPoint(mx, my)?.closest('#occList li');
-    if (li) showFloat(li.dataset.img);
+    if (li) showFloat(asset(li.dataset.img));
     else hideFloat();
   }, { passive: true });
 
@@ -722,7 +731,7 @@ async function boot() {
     return;
   }
   gsap.set('#nav, #navLogo', { opacity: 0 });
-  const layers = logo.layers.map((l) => new Promise((r) => { const i = new Image(); i.onload = i.onerror = r; i.src = `/images/logo/${l.name}.png`; }));
+  const layers = logo.layers.map((l) => new Promise((r) => { const i = new Image(); i.onload = i.onerror = r; i.src = asset(`images/logo/${l.name}.png`); }));
   await Promise.all([document.fonts.ready, ...layers]);
   runIntro();
 }
